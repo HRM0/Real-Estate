@@ -9,7 +9,7 @@ submitButton.addEventListener("click", function() {
     let city = document.querySelector(".city").value
     let state = document.querySelector(".state").value
 
-    newListings.push({id:newListings.length,street: street, type: propType, city: city, state: state})
+    newListings.push({id:newListings.length,street: street, type: propType, city: city, state: state, comments:[]})
     clearListings()
     renderAllListings(newListings)
 })
